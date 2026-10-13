@@ -1,0 +1,21 @@
+Algoritmo Para Calcular y Visualizar en su pantalla en pantalla su producto ,suma y ,edia aritmetica 
+Inicio 
+  Definir n1,2,n3,n4 como real 
+  definir suma , producto , aritmetica Como Real 
+  Escrbir "Ingresa el primer dato"
+  Leer n1
+  Escribir"Ingrese el segundo dato"
+  Leer n2 
+  Escrbir "Ingrese el tercer numero dato "
+  Leer n3
+  Escribir " Ingrese el cuarto numero "
+  Leer n4
+ suma<- n1 + n2 + n3 + n4 
+producto <- n1 * n2 * n3 n3* n4
+ media <-suma / 4 
+Escrbir " la suma es " , suma 
+Escribir " El producto es : ", producto
+Escribir " La media aritmetica es : " , media 
+Fin Algoritmo
+Fin 
+
