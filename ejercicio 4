@@ -1,0 +1,12 @@
+Algoritmo Para Calcular el area de un Rectangulo 
+Definir base, altura, area Como Real
+     
+     Escribir "Ingrese la base del rectángulo:"
+     Leer base
+     Escribir "Ingrese la altura del rectángulo:"
+     Leer altura
+     
+     area = base * altura
+     
+     Escribir "El área del rectángulo es: ", area
+ FIN
