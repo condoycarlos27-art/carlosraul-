@@ -1,0 +1,25 @@
+Algoritmo Dia de la Semana 
+Incio 
+Definir como numero entero 
+Si numero es = 1 Entonces 
+ Escribir " Lunes "
+SiNo 
+ Si numero es =  2  Entonces
+ Escribir "Martes "
+ SiNo
+ Si numero numero  es = 3 Entonces 
+ Escribir " Miercoles "
+ SiNo
+ Si numero es = 4 Entonces 
+ Escribir "Jueves "
+ SiNo
+ Si numero es = 5 Entonces 
+ Escribir " Viernes "
+ SiNo
+ Si numero es = 6 Entonces 
+ Escribir " Sabado "
+ SiNo 
+ Si numero es = 7 Entonces 
+ Escribir "Domingo"
+ Finsi
+Fin 
