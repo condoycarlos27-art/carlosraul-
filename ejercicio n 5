@@ -1,0 +1,13 @@
+Algoritmo Para Calcular la longuitud 
+ Definir PI = 3.1416 Como Constante Real
+     
+     Escribir "Ingrese el radio de la circunferencia:"
+     Leer radio
+     
+     longitud = 2 * PI * radio
+     area = PI * radio * radio
+     
+     Escribir "-----------------------------"
+     Escribir "Longitud de la circunferencia: ", longitud
+     Escribir "Área del círculo: ", area
+ FIN
