@@ -1,0 +1,23 @@
+AlgoritmoCalcularnotaPromedioparcial 
+ //Declaraciones 
+// Control de Notas 
+Escribir "Ingresar Nota Parcial 1"  (0-10)
+  Leer Nota Parcial 1
+Escribir "Ingresar Nota Parcial 2"  (0-10)
+   Leer Nota Parcial 2 
+ Escribir "Ingresar Nota Parcial 3" (0-10)
+  Leer Nota Parcial 3 
+//Calucular promedio ponderado 
+   Promedio nota parcial 1*0,30 + Promedio nota parcial 2*0,30 + Pomedio nota 3*0,40 
+Resultado de total de promedio de notas 
+ Salida de resultados
+  " Escribir resultados "
+--------------------------
+Ingresar resultado de promedio de nota 
+ Si promedio de nota > = 7 Entonces 
+  Escribir " Felicidades aprobaste asignatura"
+ SiNo 
+  Escribir " Mala suerte reprobaste "
+ 
+FinSi
+FinAlgoritmo 
