@@ -1,0 +1,30 @@
+Algoritmoalumnos 
+     Definir N, contador, aprobados, reprobados Como Entero
+     Definir nota Como Real
+     
+     // Entrada: cantidad de alumnos
+     Escribir "Ingrese el número de alumnos:"
+     Leer N
+     
+     // Inicializar contadores
+     aprobados = 0
+     reprobados = 0
+     
+     // Ciclo repetitivo
+     Para contador = 1 Hasta N Hacer
+         Escribir "Ingrese la nota del alumno ", contador, " (0-10):"
+         Leer nota
+         
+         Si nota >= 7 Entonces
+             aprobados = aprobados + 1
+         SiNo
+             reprobados = reprobados + 1
+         Fin Si
+     Fin Para
+     
+     // Salida de resultados
+     Escribir "-----------------------------"
+     Escribir "Total de alumnos: ", N
+     Escribir "Aprobados: ", aprobados
+     Escribir " Reprobados: ", reprobados
+ FIN
