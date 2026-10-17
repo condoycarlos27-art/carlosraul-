@@ -1,0 +1,15 @@
+INICIO
+    Definir largo, ancho, area, perímetro Como Real
+    
+    Escribir "Ingrese el largo del terreno (metros):"
+    Leer largo
+    
+    Escribir "Ingrese el ancho del terreno (metros):"
+    Leer ancho
+    
+    area = largo * ancho
+    perímetro = 2 * (largo + ancho)
+    
+    Escribir "Área del terreno: ", area, " m²"
+    Escribir "Perímetro del terreno: ", perímetro, " m"
+FIN
