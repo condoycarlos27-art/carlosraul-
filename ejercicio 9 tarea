@@ -1,0 +1,14 @@
+INICIO
+    Definir numero, residuo Como Entero
+    
+    Escribir "Ingrese un número entero:"
+    Leer numero
+    
+    residuo = numero MOD 2
+    
+    Si residuo == 0 Entonces
+        Escribir "PAR"
+    SiNo
+        Escribir "IMPAR"
+    Fin Si
+FI
