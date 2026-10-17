@@ -1,0 +1,15 @@
+Definir viajes_por_dia, costo_pasaje, dias_semana, gasto_total Como Real
+     
+     Escribir "Ingrese viajes por día:"
+     Leer viajes_por_dia
+     
+     Escribir "Ingrese costo del pasaje:"
+     Leer costo_pasaje
+     
+     Escribir "Ingrese días que viaja a la semana:"
+     Leer dias_semana
+     
+     gasto_total = viajes_por_dia * costo_pasaje * dias_semana
+     
+     Escribir "El gasto total semanal es: $", gasto_total
+ FIN
