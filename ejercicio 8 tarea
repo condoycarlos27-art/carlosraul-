@@ -1,0 +1,18 @@
+INICIO
+    Definir monto, descuento, total_a_pagar Como Real
+    
+    Escribir "Ingrese el monto de la compra:"
+    Leer monto
+    
+    Si monto >= 200 Entonces
+        descuento = monto * 0.15
+    SiNo Si monto >= 100 Y monto <= 199.99 Entonces
+        descuento = monto * 0.10
+    SiNo
+        descuento = monto * 0.05
+    Fin Si
+    
+    total_a_pagar = monto - descuento
+    
+    Escribir "Monto a pagar después del descuento: $", total_a_pagar
+FIN
