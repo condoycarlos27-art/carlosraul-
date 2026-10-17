@@ -1,0 +1,21 @@
+INICIO
+    Definir N, i Como Entero
+    Definir nota, suma, promedio Como Real
+    
+    Escribir "Ingrese la cantidad de notas:"
+    Leer N
+    
+    suma = 0
+    i = 1
+    
+    Mientras i <= N Hacer
+        Escribir "Ingrese la nota ", i, ":"
+        Leer nota
+        suma = suma + nota
+        i = i + 1
+    Fin Mientras
+    
+    promedio = suma / N
+    
+    Escribir "El promedio es: ", promedio
+FIN
