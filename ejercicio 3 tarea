@@ -1,15 +1,20 @@
-Definir nota1, nota2, nota3, promedio Como Real
-     
-     Escribir "Ingrese la nota 1:"
-     Leer nota1
-     
-     Escribir "Ingrese la nota 2:"
-     Leer nota2
-     
-     Escribir "Ingrese la nota 3:"
-     Leer nota3
-     
-     promedio = (nota1 + nota2 + nota3) / 3
-     
-     Escribir "El promedio es: ", promedio
- FIN
+INICIO
+    // Declarar variables
+    Definir nota1, nota2, nota3, promedio Como Real
+    
+    // Entrada: solicitar las tres notas
+    Escribir "Ingrese la primera nota (0 a 10):"
+    Leer nota1
+    
+    Escribir "Ingrese la segunda nota (0 a 10):"
+    Leer nota2
+    
+    Escribir "Ingrese la tercera nota (0 a 10):"
+    Leer nota3
+    
+    // Proceso: calcular el promedio
+    promedio = (nota1 + nota2 + nota3) / 3
+    
+    // Salida: mostrar el resultado
+    Escribir "El promedio del estudiante es: ", promedio
+FIN
