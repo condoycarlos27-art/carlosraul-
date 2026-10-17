@@ -1,0 +1,14 @@
+Definir precio_original, descuento, precio_con_descuento, iva, precio_final Como Real
+     
+     Escribir "Ingrese el precio original del artículo:"
+     Leer precio_original
+     
+     descuento = precio_original * 0.20
+     precio_con_descuento = precio_original - descuento
+     
+     iva = precio_con_descuento * 0.15
+     precio_final = precio_con_descuento + iva
+     
+     Escribir "Precio con descuento: $", precio_con_descuento
+     Escribir "Precio final a pagar: $", precio_final
+ FIN
