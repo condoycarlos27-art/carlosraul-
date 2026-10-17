@@ -1,0 +1,13 @@
+INICIO
+    Definir dolares, tipo_cambio, pesos Como Real
+    
+    Escribir "Ingrese la cantidad en dólares:"
+    Leer dolares
+    
+    Escribir "Ingrese el tipo de cambio actual:"
+    Leer tipo_cambio
+    
+    pesos = dolares * tipo_cambio
+    
+    Escribir "Equivalente en pesos mexicanos: $", pesos
+FIN
