@@ -1,0 +1,25 @@
+INICIO
+    Definir n1, n2, n3, menor Como Real
+    
+    Escribir "Ingrese el primer número:"
+    Leer n1
+    
+    Escribir "Ingrese el segundo número:"
+    Leer n2
+    
+    Escribir "Ingrese el tercer número:"
+    Leer n3
+    
+    // Comparaciones sucesivas
+    Si n1 < n2 Entonces
+        menor = n1
+    SiNo
+        menor = n2
+    Fin Si
+    
+    Si n3 < menor Entonces
+        menor = n3
+    Fin Si
+    
+    Escribir "El menor de los tres es: ", menor
+FIN
