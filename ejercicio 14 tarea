@@ -1,0 +1,27 @@
+INICIO
+    Definir N, i, aprobados, reprobados Como Entero
+    Definir nota Como Real
+    
+    Escribir "Ingrese la cantidad de estudiantes:"
+    Leer N
+    
+    aprobados = 0
+    reprobados = 0
+    i = 1
+    
+    Mientras i <= N Hacer
+        Escribir "Ingrese la nota del estudiante ", i, ":"
+        Leer nota
+        
+        Si nota >= 7 Entonces
+            aprobados = aprobados + 1
+        SiNo
+            reprobados = reprobados + 1
+        Fin Si
+        
+        i = i + 1
+    Fin Mientras
+    
+    Escribir "Aprobados: ", aprobados
+    Escribir "Reprobados: ", reprobados
+FIN
