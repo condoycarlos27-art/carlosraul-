@@ -1,0 +1,12 @@
+INICIO
+    Definir K, i Como Entero
+    
+    Escribir "Ingrese el número para mostrar su tabla de multiplicar:"
+    Leer K
+    
+    i = 1
+    Mientras i <= 10 Hacer
+        Escribir K, " x ", i, " = ", K * i
+        i = i + 1
+    Fin Mientras
+FIN
