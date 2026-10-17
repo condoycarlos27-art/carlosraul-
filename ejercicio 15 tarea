@@ -1,0 +1,15 @@
+INICIO
+    Definir salario Como Real
+    Definir año Como Entero
+    
+    salario = 1500
+    
+    Escribir "Año 1: $", salario
+    
+    Para año Desde 2 Hasta 6 Hacer
+        salario = salario * 1.10
+        Escribir "Año ", año, ": $", salario
+    Fin Para
+    
+    Escribir "Salario final después de 6 años: $", salario
+FIN
