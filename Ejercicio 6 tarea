@@ -1,0 +1,17 @@
+INICIO
+    Definir horas, tarifa, sueldo Como Real
+    
+    Escribir "Ingrese las horas trabajadas:"
+    Leer horas
+    
+    Escribir "Ingrese el pago por hora:"
+    Leer tarifa
+    
+    Si horas <= 40 Entonces
+        sueldo = horas * tarifa
+    SiNo
+        sueldo = (40 * tarifa) + ((horas - 40) * tarifa * 2)
+    Fin Si
+    
+    Escribir "El sueldo semanal es: $", sueldo
+FIN
