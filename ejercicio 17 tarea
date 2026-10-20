@@ -1,0 +1,16 @@
+ALGORITMO PrestamoSimple
+    DEFINIR monto, tasa_mensual, meses, interes_total, cuota COMO REAL
+    
+    ESCRIBIR "Ingrese el monto del préstamo: "
+    LEER monto
+    ESCRIBIR "Ingrese la tasa mensual (%): "
+    LEER tasa_mensual
+    ESCRIBIR "Ingrese el número de meses: "
+    LEER meses
+    
+    interes_total = monto * (tasa_mensual / 100) * meses
+    cuota = (monto + interes_total) / meses
+    
+    ESCRIBIR "Interés total: $", interes_total
+    ESCRIBIR "Cuota mensual: $", cuota
+FIN
