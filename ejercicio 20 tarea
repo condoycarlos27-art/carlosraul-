@@ -1,0 +1,20 @@
+ALGORITMO DecimalABinario
+    DEFINIR decimal, residuo COMO ENTERO
+    DEFINIR binario COMO CADENA
+    
+    ESCRIBIR "Ingrese número decimal: "
+    LEER decimal
+    
+    SI decimal = 0 ENTONCES
+        binario = "0"
+    SI NO
+        binario = ""
+        REPETIR
+            residuo = decimal MOD 2
+            binario = CONVERTIR_CADENA(residuo) + binario
+            decimal = decimal DIV 2
+        HASTA QUE decimal = 0
+    FIN SI
+    
+    ESCRIBIR "Binario: ", binario
+FIN
