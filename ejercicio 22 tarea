@@ -1,0 +1,21 @@
+ALGORITMO ClasificarTriangulo
+    DEFINIR a1, a2, a3, suma, mayor COMO REAL
+    
+    ESCRIBIR "Ingrese los 3 ángulos: "
+    LEER a1, a2, a3
+    
+    suma = a1 + a2 + a3
+    
+    SI suma <> 180 ENTONCES
+        ESCRIBIR "❌ ERROR: No forman un triángulo (no suman 180°)"
+    SI NO
+        mayor = MAXIMO(a1, MAXIMO(a2, a3))
+        SI mayor < 90 ENTONCES
+            ESCRIBIR "✅ Triángulo ACUTÁNGULO"
+        SI NO SI mayor = 90 ENTONCES
+            ESCRIBIR "✅ Triángulo RECTÁNGULO"
+        SI NO
+            ESCRIBIR "✅ Triángulo OBTUSÁNGULO"
+        FIN SI
+    FIN SI
+FIN
