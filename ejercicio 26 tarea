@@ -1,0 +1,40 @@
+ALGORITMO ValidarFecha
+    DEFINIR dia, mes, anio COMO ENTERO
+    DEFINIR es_bisiesto COMO LOGICO
+    
+    ESCRIBIR "Ingrese día: "
+    LEER dia
+    ESCRIBIR "Ingrese mes: "
+    LEER mes
+    ESCRIBIR "Ingrese año: "
+    LEER anio
+    
+    // Validar mes
+    SI mes < 1 O mes > 12 ENTONCES
+        ESCRIBIR "❌ Mes inválido"
+        DETENER
+    FIN SI
+    
+    // Determinar si es bisiesto
+    es_bisiesto = (anio MOD 4 = 0 Y anio MOD 100 <> 0) O (anio MOD 400 = 0)
+    
+    // Validar días según mes
+    SEGUN mes HACER
+        CASO 2: // Febrero
+            SI es_bisiesto ENTONCES
+                max_dias = 29
+            SI NO
+                max_dias = 28
+            FIN SI
+        CASO 4, 6, 9, 11:
+            max_dias = 30
+        CASO CONTRARIO:
+            max_dias = 31
+    FIN SEGUN
+    
+    SI dia >= 1 Y dia <= max_dias ENTONCES
+        ESCRIBIR "✅ FECHA VÁLIDA"
+    SI NO
+        ESCRIBIR "❌ FECHA INVÁLIDA"
+    FIN SI
+FIN
