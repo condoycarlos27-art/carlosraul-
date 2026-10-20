@@ -1,0 +1,25 @@
+ALGORITMO CostoViaje
+    DEFINIR distancia, consumo_km, precio_combustible, litros, costo_combustible
+    DEFINIR num_peajes, costo_peaje_unitario, costo_peajes, total COMO REAL
+    
+    ESCRIBIR "Distancia en km: "
+    LEER distancia
+    ESCRIBIR "Consumo en litros/km: "
+    LEER consumo_km
+    ESCRIBIR "Precio por litro de combustible: "
+    LEER precio_combustible
+    ESCRIBIR "Número de peajes: "
+    LEER num_peajes
+    ESCRIBIR "Costo unitario de peaje: "
+    LEER costo_peaje_unitario
+    
+    litros = distancia * consumo_km
+    costo_combustible = litros * precio_combustible
+    costo_peajes = num_peajes * costo_peaje_unitario
+    total = costo_combustible + costo_peajes
+    
+    ESCRIBIR "Litros necesarios: ", litros
+    ESCRIBIR "Costo combustible: $", costo_combustible
+    ESCRIBIR "Costo peajes: $", costo_peajes
+    ESCRIBIR "COSTO TOTAL DEL VIAJE: $", total
+FIN
