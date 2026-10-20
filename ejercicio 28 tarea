@@ -1,0 +1,19 @@
+ALGORITMO NumeroPerfecto
+    DEFINIR N, suma, i COMO ENTERO
+    
+    ESCRIBIR "Ingrese un número: "
+    LEER N
+    
+    suma = 0
+    PARA i DESDE 1 HASTA N/2 HACER
+        SI N MOD i = 0 ENTONCES
+            suma = suma + i
+        FIN SI
+    FIN PARA
+    
+    SI suma = N ENTONCES
+        ESCRIBIR N, " ES un número perfecto ✅"
+    SI NO
+        ESCRIBIR N, " NO es un número perfecto ❌"
+    FIN SI
+FIN
