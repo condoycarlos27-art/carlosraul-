@@ -1,0 +1,25 @@
+ALGORITMO CalcularBono
+    DEFINIR sueldo_base, productividad, bono, total COMO REAL
+    DEFINIR porcentaje COMO REAL
+    
+    ESCRIBIR "Sueldo base: "
+    LEER sueldo_base
+    ESCRIBIR "Índice de productividad: "
+    LEER productividad
+    
+    SI productividad >= 90 ENTONCES
+        porcentaje = 0.20
+    SI NO SI productividad >= 70 ENTONCES
+        porcentaje = 0.10
+    SI NO SI productividad >= 50 ENTONCES
+        porcentaje = 0.05
+    SI NO
+        porcentaje = 0.00
+    FIN SI
+    
+    bono = sueldo_base * porcentaje
+    total = sueldo_base + bono
+    
+    ESCRIBIR "Bono: $", bono, " (", porcentaje*100, "%)"
+    ESCRIBIR "Total a recibir: $", total
+FIN
