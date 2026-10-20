@@ -1,0 +1,23 @@
+ALGORITMO AhorroCompuesto
+    DEFINIR capital, deposito_mensual, saldo, tasa COMO REAL
+    DEFINIR meses, i COMO ENTERO
+    
+    ESCRIBIR "Capital inicial: "
+    LEER capital
+    ESCRIBIR "Depósito mensual: "
+    LEER deposito_mensual
+    ESCRIBIR "Número de meses: "
+    LEER meses
+    tasa = 0.015  // 1.5% mensual
+    
+    saldo = capital
+    ESCRIBIR "Mes 0 → Saldo inicial: $", saldo
+    
+    PARA i DESDE 1 HASTA meses HACER
+        saldo = saldo * (1 + tasa)  // Aplicar interés
+        saldo = saldo + deposito_mensual  // Agregar depósito
+        ESCRIBIR "Mes ", i, " → Saldo: $", saldo
+    FIN PARA
+    
+    ESCRIBIR " Saldo final después de ", meses, " meses: $", saldo
+FIN
