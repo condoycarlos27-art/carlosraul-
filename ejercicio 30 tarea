@@ -1,0 +1,20 @@
+ALGORITMO DecimalAHexadecimal
+    DEFINIR decimal, residuo COMO ENTERO
+    DEFINIR hex_digitos, hex_resultado COMO CADENA
+    hex_digitos = "0123456789ABCDEF"
+    
+    ESCRIBIR "Ingrese número decimal: "
+    LEER decimal
+    
+    SI decimal = 0 ENTONCES
+        ESCRIBIR "Hexadecimal: 0"
+    SI NO
+        hex_resultado = ""
+        REPETIR
+            residuo = decimal MOD 16
+            hex_resultado = SUBCADENA(hex_digitos, residuo, 1) + hex_resultado
+            decimal = decimal DIV 16
+        HASTA QUE decimal = 0
+        ESCRIBIR "Hexadecimal: ", hex_resultado
+    FIN SI
+FIN
