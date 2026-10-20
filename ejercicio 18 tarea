@@ -1,0 +1,16 @@
+ALGORITMO ConsumoElectrico
+    DEFINIR potencia, horas_diarias, tarifa, consumo_mensual, costo_total COMO REAL
+    
+    ESCRIBIR "Ingrese potencia del aparato en Watts: "
+    LEER potencia
+    ESCRIBIR "Horas de uso diario: "
+    LEER horas_diarias
+    ESCRIBIR "Tarifa por kWh: "
+    LEER tarifa
+    
+    consumo_mensual = (potencia / 1000) * horas_diarias * 30
+    costo_total = consumo_mensual * tarifa
+    
+    ESCRIBIR "Consumo mensual: ", consumo_mensual, " kWh"
+    ESCRIBIR "Costo total mensual: $", costo_total
+FIN
