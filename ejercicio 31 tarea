@@ -1,0 +1,41 @@
+ALGORITMO EstadisticaCalificaciones
+    DEFINIR N, i, nota, suma, mayor, menor, aprobados, reprobados COMO ENTERO
+    DEFINIR promedio COMO REAL
+    
+    ESCRIBIR "Cantidad de calificaciones: "
+    LEER N
+    
+    suma = 0
+    mayor = -999
+    menor = 999
+    aprobados = 0
+    reprobados = 0
+    
+    PARA i DESDE 1 HASTA N HACER
+        ESCRIBIR "Nota ", i, ": "
+        LEER nota
+        suma = suma + nota
+        
+        SI nota > mayor ENTONCES
+            mayor = nota
+        FIN SI
+        SI nota < menor ENTONCES
+            menor = nota
+        FIN SI
+        
+        SI nota >= 7 ENTONCES
+            aprobados = aprobados + 1
+        SI NO
+            reprobados = reprobados + 1
+        FIN SI
+    FIN PARA
+    
+    promedio = suma / N
+    
+    ESCRIBIR "===== RESUMEN ====="
+    ESCRIBIR "Promedio: ", promedio
+    ESCRIBIR "Nota mayor: ", mayor
+    ESCRIBIR "Nota menor: ", menor
+    ESCRIBIR "Aprobados (≥7): ", aprobados
+    ESCRIBIR "Reprobados: ", reprobados
+FIN
