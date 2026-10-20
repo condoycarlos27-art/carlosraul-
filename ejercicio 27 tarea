@@ -1,0 +1,16 @@
+ALGORITMO MCD_Euclides
+    DEFINIR a, b, resto COMO ENTERO
+    
+    ESCRIBIR "Ingrese primer número: "
+    LEER a
+    ESCRIBIR "Ingrese segundo número: "
+    LEER b
+    
+    REPETIR
+        resto = a MOD b
+        a = b
+        b = resto
+    HASTA QUE b = 0
+    
+    ESCRIBIR "El MCD es: ", a
+FIN
