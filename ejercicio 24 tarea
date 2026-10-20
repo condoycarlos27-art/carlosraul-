@@ -1,0 +1,18 @@
+ALGORITMO EstacionDelAnio
+    DEFINIR mes, dia COMO ENTERO
+    
+    ESCRIBIR "Ingrese mes (1-12): "
+    LEER mes
+    ESCRIBIR "Ingrese día: "
+    LEER dia
+    
+    SI (mes = 12 Y dia >= 21) O (mes = 1) O (mes = 2) O (mes = 3 Y dia <= 20) ENTONCES
+        ESCRIBIR "☀️ VERANO"
+    SI NO SI (mes = 3 Y dia >= 21) O (mes = 4) O (mes = 5) O (mes = 6 Y dia <= 20) ENTONCES
+        ESCRIBIR "🍂 OTOÑO"
+    SI NO SI (mes = 6 Y dia >= 21) O (mes = 7) O (mes = 8) O (mes = 9 Y dia <= 20) ENTONCES
+        ESCRIBIR "❄️ INVIERNO"
+    SI NO
+        ESCRIBIR "🌸 PRIMAVERA"
+    FIN SI
+FIN
