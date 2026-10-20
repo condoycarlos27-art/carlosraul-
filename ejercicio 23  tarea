@@ -1,0 +1,25 @@
+ALGORITMO TarifaTaxi
+    DEFINIR km, tarifa_base, total COMO REAL
+    DEFINIR es_noche COMO CADENA
+    
+    tarifa_base = 2.00
+    
+    ESCRIBIR "Kilómetros recorridos: "
+    LEER km
+    ESCRIBIR "¿Es de noche? (S/N): "
+    LEER es_noche
+    
+    total = tarifa_base + (km * 1.50)
+    
+    // Recargo por distancia
+    SI km > 10 ENTONCES
+        total = total * 1.20
+    FIN SI
+    
+    // Recargo nocturno
+    SI es_noche = "S" O es_noche = "s" ENTONCES
+        total = total * 1.30
+    FIN SI
+    
+    ESCRIBIR "💰 TOTAL A PAGAR: $", total
+FIN
