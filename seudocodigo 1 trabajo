@@ -1,0 +1,17 @@
+INICIO
+    // Entradas
+    LEER monto_prestamo
+    LEER tasa_trimestral
+    LEER numero_trimestres
+    LEER porcentaje_abono
+
+    // Cálculos
+    monto_total = monto_prestamo * (1 + tasa_trimestral) ^ numero_trimestres
+    valor_abono = monto_total * (porcentaje_abono / 100)
+    monto_final = monto_total - valor_abono
+
+    // Salidas
+    ESCRIBIR "Monto antes del abono: ", monto_total
+    ESCRIBIR "Valor del abono extraordinario: ", valor_abono
+    ESCRIBIR "Monto final a cancelar: ", monto_final
+FIN
