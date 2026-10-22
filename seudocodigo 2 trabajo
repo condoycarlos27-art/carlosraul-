@@ -1,0 +1,27 @@
+INICIO
+    // Entradas
+    LEER promedio
+    LEER reprobadas
+    LEER primer_ciclo  // S o N
+
+    // Inicializar
+    porcentaje_beca = 0
+
+    // Reglas selectivas
+    SI promedio >= 9.0 Y reprobadas = 0 Y primer_ciclo = "S" ENTONCES
+        porcentaje_beca = 100
+    SINO SI promedio >= 8.0 Y reprobadas <= 1 ENTONCES
+        porcentaje_beca = 70
+    SINO SI promedio >= 7.0 Y reprobadas <= 2 ENTONCES
+        porcentaje_beca = 40
+    SINO
+        porcentaje_beca = 0
+    FIN SI
+
+    // Salidas
+    SI porcentaje_beca > 0 ENTONCES
+        ESCRIBIR "Beca aprobada, porcentaje: ", porcentaje_beca, "%"
+    SINO
+        ESCRIBIR "Solicitud de beca rechazada"
+    FIN SI
+FIN
