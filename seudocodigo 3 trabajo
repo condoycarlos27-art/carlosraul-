@@ -1,0 +1,40 @@
+INICIO
+    // Inicializar variables
+    total_ventas = 0
+    contador_dias = 0
+    dias_mayor_500 = 0
+    venta_maxima = 0
+    dia_venta_max = 1
+    venta = 0
+
+    // Bucle repetitivo
+    LEER venta
+    MIENTRAS venta <> -1 HACER
+        contador_dias = contador_dias + 1
+        total_ventas = total_ventas + venta
+
+        SI venta > 500 ENTONCES
+            dias_mayor_500 = dias_mayor_500 + 1
+        FIN SI
+
+        SI venta > venta_maxima ENTONCES
+            venta_maxima = venta
+            dia_venta_max = contador_dias
+        FIN SI
+
+        LEER venta
+    FIN MIENTRAS
+
+    // Cálculo final
+    SI contador_dias > 0 ENTONCES
+        promedio_ventas = total_ventas / contador_dias
+    SINO
+        promedio_ventas = 0
+    FIN SI
+
+    // Salidas
+    ESCRIBIR "Total de ventas: ", total_ventas
+    ESCRIBIR "Promedio de ventas: ", promedio_ventas
+    ESCRIBIR "Días con ventas mayores a $500: ", dias_mayor_500
+    ESCRIBIR "Mayor venta fue el día ", dia_venta_max, " con valor: ", venta_maxima
+FIN
