@@ -1,0 +1,14 @@
+INICIO
+    LEER promedio
+    LEER asistencia_porcentaje
+    SI promedio >= 9 Y asistencia_porcentaje >= 90 ENTONCES
+        categoria ← "Excelente"
+    SINO SI promedio >=7 Y asistencia_porcentaje >=80 ENTONCES
+        categoria ← "Bueno"
+    SINO SI promedio >=6 Y asistencia_porcentaje >=70 ENTONCES
+        categoria ← "Regular"
+    SINO
+        categoria ← "Deficiente"
+    FIN SI
+    IMPRIMIR "Categoría del estudiante: ", categoria
+FI
