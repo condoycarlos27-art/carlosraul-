@@ -1,0 +1,8 @@
+INICIO
+    LEER a (cateto 1)
+    LEER b (cateto 2)
+    h ← RAÍZ(a^2 + b^2)
+    area ← (a * b) / 2
+    IMPRIMIR "Hipotenusa: ", h
+    IMPRIMIR "Área del triángulo: ", area
+FIN
