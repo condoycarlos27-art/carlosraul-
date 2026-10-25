@@ -1,0 +1,14 @@
+INICIO
+    LEER horas
+    LEER es_nocturno (S / N)
+    tarifa_base ← horas * 1.50
+    SI horas > 8 ENTONCES
+        tarifa_base ← tarifa_base * 1.25
+    FIN SI
+    SI es_nocturno = "S" ENTONCES
+        total ← tarifa_base * 1.30
+    SINO
+        total ← tarifa_base
+    FIN SI
+    IMPRIMIR "Total a pagar: $", total
+FIN
