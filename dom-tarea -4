@@ -1,0 +1,9 @@
+INICIO
+    LEER D (depósito mensual)
+    LEER i (tasa mensual decimal)
+    LEER n (cantidad de meses)
+    total_depositado ← D * n
+    VF ← D * (( (1+i)^n - 1 ) / i )
+    IMPRIMIR "Total depositado: ", total_depositado
+    IMPRIMIR "Valor futuro de la anualidad: ", VF
+FIN
