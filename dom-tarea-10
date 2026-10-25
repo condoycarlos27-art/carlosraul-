@@ -1,0 +1,8 @@
+INICIO
+    LEER numero
+    original ← numero
+    suma_cubos ← 0
+    MIENTRAS numero > 0 HACER
+        digito ← numero MOD 10
+        suma_cubos ← suma_cubos + digito^3
+        numero
