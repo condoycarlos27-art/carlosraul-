@@ -1,0 +1,9 @@
+INICIO
+    LEER r (radio)
+    LEER theta_grados (ángulo en grados)
+    theta_rad ← theta_grados * 3,1416 / 180
+    x ← r * COS(theta_rad)
+    y ← r * SEN(theta_rad)
+    IMPRIMIR "Coordenada x: ", x
+    IMPRIMIR "Coordenada y: ", y
+FIN
