@@ -1,0 +1,8 @@
+INICIO
+    LEER N
+    suma ← 0
+    PARA i DESDE 1 HASTA N HACER
+        suma ← suma + 1 / i
+    FIN PARA
+    IMPRIMIR "Suma de la serie: ", suma
+FIN
