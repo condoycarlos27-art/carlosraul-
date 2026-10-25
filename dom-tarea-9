@@ -1,0 +1,10 @@
+INICIO
+    LEER monto_compra
+    LEER es_frecuente (S / N)
+    // Determinar descuento base
+    SI monto_compra >= 500 ENTONCES
+        descuento_base ← 15
+    SINO SI monto_compra >= 300 ENTONCES
+        descuento_base ← 10
+    SINO SI monto_compra >= 100 ENTONCES
+        descuento_base ←
