@@ -1,0 +1,9 @@
+INICIO
+    LEER capital
+    LEER tasa_anual (decimal)
+    LEER meses
+    interes_total ← capital * tasa_anual * (meses / 12)
+    cuota_mensual ← (capital + interes_total) / meses
+    IMPRIMIR "Interés total: ", interes_total
+    IMPRIMIR "Cuota mensual a pagar: ", cuota_mensual
+FIN
