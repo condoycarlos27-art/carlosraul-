@@ -1,0 +1,15 @@
+INICIO
+    LEER peso_real
+    LEER largo
+    LEER ancho
+    LEER alto
+    peso_vol ← (largo * ancho * alto) / 5000
+    SI peso_real > peso_vol THEN
+        peso_cobrar ← peso_real
+    SINO
+        peso_cobrar ← peso_vol
+    FIN SI
+    costo_total ← peso_cobrar * 2.50
+    IMPRIMIR "Peso a cobrar: ", peso_cobrar
+    IMPRIMIR "Costo total de envío: ", costo_total
+FIN
