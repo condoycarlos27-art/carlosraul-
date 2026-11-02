@@ -1,0 +1,17 @@
+public class Ejercicio81 {
+     public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+         
+         System.out.print("Ingrese el precio original del artículo: $");
+         double precio_original = scanner.nextDouble();
+         
+         double descuento = precio_original * 0.20;
+         double precio_con_descuento = precio_original - descuento;
+         double iva = precio_con_descuento * 0.15;
+         double precio_final = precio_con_descuento + iva;
+         
+         System.out.printf("Precio con descuento: $%.2f%n", precio_con_descuento);
+         System.out.printf("Precio final a pagar: $%.2f%n", precio_final);
+         
+         scanner.close();
+     }
