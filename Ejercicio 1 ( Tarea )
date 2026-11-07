@@ -1,0 +1,22 @@
+INICIO
+    DEFINIR es_estudiante COMO CARACTER
+    DEFINIR monto, descuento, total_pagar COMO REAL
+    ESCRIBIR "¿Es estudiante UTPL? (S/N)"
+    LEER es_estudiante
+    ESCRIBIR "Ingrese monto de compra: $"
+    LEER monto
+    SI es_estudiante = "S" ENTONCES
+        descuento = 20
+        SI monto > 30 ENTONCES
+            descuento = descuento + 5
+        FIN SI
+    SINO
+        descuento = 10
+        SI monto > 50 ENTONCES
+            descuento = descuento + 10
+        FIN SI
+    FIN SI
+    total_pagar = monto - (monto * descuento / 100)
+    ESCRIBIR "Descuento aplicado: ", descuento, "%"
+    ESCRIBIR "Monto a pagar: $", total_pagar
+FIN
