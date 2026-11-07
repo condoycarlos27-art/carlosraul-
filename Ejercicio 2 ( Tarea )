@@ -1,0 +1,17 @@
+INICIO
+    DEFINIR temp COMO REAL
+    ESCRIBIR "Ingrese temperatura registrada (°C):"
+    LEER temp
+    SI temp < 15 ENTONCES
+        ESCRIBIR "Clasificación: Frío"
+    SINO
+        SI temp <= 25 ENTONCES
+            ESCRIBIR "Clasificación: Templado"
+        SINO
+            ESCRIBIR "Clasificación: Cálido"
+            SI temp > 30 ENTONCES
+                ESCRIBIR "¡Alerta: calor extremo!"
+            FIN SI
+        FIN SI
+    FIN SI
+FIN
