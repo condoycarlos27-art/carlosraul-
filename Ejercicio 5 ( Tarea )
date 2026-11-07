@@ -1,0 +1,27 @@
+INICIO
+    DEFINIR horas, tarifa_base, tarifa_final COMO REAL
+    DEFINIR es_estudiante COMO CARACTER
+    ESCRIBIR "¿Es estudiante UTPL? (S/N)"
+    LEER es_estudiante
+    ESCRIBIR "Horas de permanencia:"
+    LEER horas
+
+    tarifa_base = horas * 1.00
+
+    SI es_estudiante = "S" ENTONCES
+        tarifa_base = tarifa_base * 0.50
+        SI horas > 4 ENTONCES
+            tarifa_final = tarifa_base * 1.20
+        SINO
+            tarifa_final = tarifa_base
+        FIN SI
+    SINO
+        SI horas > 6 ENTONCES
+            tarifa_final = tarifa_base * 1.20
+        SINO
+            tarifa_final = tarifa_base
+        FIN SI
+    FIN SI
+
+    ESCRIBIR "Monto a pagar por parqueadero: $", tarifa_final
+FIN
