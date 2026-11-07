@@ -1,0 +1,15 @@
+INICIO
+    DEFINIR num_dia COMO ENTERO
+    ESCRIBIR "Ingrese número del día (1‑7):"
+    LEER num_dia
+    SEGÚN‑SEA num_dia HACER
+        CASO 1: ESCRIBIR "Lunes → Día de clases"
+        CASO 2: ESCRIBIR "Martes → Día de clases"
+        CASO 3: ESCRIBIR "Miércoles → Día de clases"
+        CASO 4: ESCRIBIR "Jueves → Día de clases"
+        CASO 5: ESCRIBIR "Viernes → Día de clases"
+        CASO 6: ESCRIBIR "Sábado → Fin de semana"
+        CASO 7: ESCRIBIR "Domingo → Fin de semana"
+        OTRO‑CASO: ESCRIBIR "Número de día inválido"
+    FIN‑SEGÚN‑SEA
+FIN
