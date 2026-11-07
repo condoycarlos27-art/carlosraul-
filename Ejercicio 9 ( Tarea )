@@ -1,0 +1,13 @@
+INICIO
+    DEFINIR letra COMO CARACTER
+    ESCRIBIR "Ingrese letra de calificación (A‑F):"
+    LEER letra
+    SEGÚN‑SEA letra HACER
+        CASO "A": ESCRIBIR "Rango: 9,0 a 10,0"
+        CASO "B": ESCRIBIR "Rango: 8,0 a 8,9"
+        CASO "C": ESCRIBIR "Rango: 7,0 a 7,9"
+        CASO "D": ESCRIBIR "Rango: 6,0 a 6,9"
+        CASO "F": ESCRIBIR "Rango: 0,0 a 5,9"
+        OTRO‑CASO: ESCRIBIR "Letra de calificación inválida"
+    FIN‑SEGÚN‑SEA
+FIN
