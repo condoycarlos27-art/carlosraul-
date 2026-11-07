@@ -1,0 +1,27 @@
+INICIO
+    DEFINIR antiguedad, sueldo, porc_bono, monto_bono, total COMO REAL
+    DEFINIR es_excelente COMO CARACTER
+    ESCRIBIR "Ingrese años de antigüedad:"
+    LEER antiguedad
+    ESCRIBIR "Ingrese sueldo mensual:"
+    LEER sueldo
+    ESCRIBIR "¿Evaluación excelente? (S/N)"
+    LEER es_excelente
+
+    SI antiguedad > 2 ENTONCES
+        porc_bono = 10
+        SI es_excelente = "S" ENTONCES
+            porc_bono = porc_bono + 5
+        FIN SI
+    SINO
+        porc_bono = 0
+        SI es_excelente = "S" ENTONCES
+            porc_bono = 5
+        FIN SI
+    FIN SI
+
+    monto_bono = sueldo * porc_bono / 100
+    total = sueldo + monto_bono
+    ESCRIBIR "Bono (%): ", porc_bono
+    ESCRIBIR "Sueldo total a recibir: $", total
+FIN
