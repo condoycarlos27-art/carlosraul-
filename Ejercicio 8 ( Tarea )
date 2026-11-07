@@ -1,0 +1,32 @@
+INICIO
+    DEFINIR opcion COMO ENTERO
+    DEFINIR valor, resultado COMO REAL
+    ESCRIBIR "===== CONVERSOR DE UNIDADES ====="
+    ESCRIBIR "1 = Kilómetros a metros"
+    ESCRIBIR "2 = Metros a centímetros"
+    ESCRIBIR "3 = Horas a minutos"
+    ESCRIBIR "4 = Salir"
+    ESCRIBIR "Seleccione opción:"
+    LEER opcion
+    SEGÚN‑SEA opcion HACER
+        CASO 1:
+            ESCRIBIR "Ingrese valor en kilómetros:"
+            LEER valor
+            resultado = valor * 1000
+            ESCRIBIR "Resultado: ", valor, " km = ", resultado, " m"
+        CASO 2:
+            ESCRIBIR "Ingrese valor en metros:"
+            LEER valor
+            resultado = valor * 100
+            ESCRIBIR "Resultado: ", valor, " m = ", resultado, " cm"
+        CASO 3:
+            ESCRIBIR "Ingrese valor en horas:"
+            LEER valor
+            resultado = valor * 60
+            ESCRIBIR "Resultado: ", valor, " h = ", resultado, " min"
+        CASO 4:
+            ESCRIBIR "Saliendo del conversor…"
+        OTRO‑CASO:
+            ESCRIBIR "Opción inválida"
+    FIN‑SEGÚN‑SEA
+FIN
