@@ -1,0 +1,23 @@
+INICIO
+    DEFINIR opcion COMO ENTERO
+    DEFINIR precio COMO REAL
+    ESCRIBIR "===== CAFETERÍA UTPL ====="
+    ESCRIBIR "1 = Café ($1,50)"
+    ESCRIBIR "2 = Jugo ($1,20)"
+    ESCRIBIR "3 = Sándwich ($2,50)"
+    ESCRIBIR "4 = Salir"
+    ESCRIBIR "Seleccione opción:"
+    LEER opcion
+
+    SEGÚN‑SEA opcion HACER
+        CASO 1: precio = 1.50
+        CASO 2: precio = 1.20
+        CASO 3: precio = 2.50
+        CASO 4: ESCRIBIR "Gracias por su visita, ¡hasta pronto!"
+        OTRO‑CASO: ESCRIBIR "Opción inválida"
+    FIN‑SEGÚN‑SEA
+
+    SI opcion >=1 Y opcion <=3 ENTONCES
+        ESCRIBIR "Precio a pagar: $", precio
+    FIN SI
+FIN
