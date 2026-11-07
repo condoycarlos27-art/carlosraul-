@@ -1,0 +1,17 @@
+INICIO
+    DEFINIR opcion COMO ENTERO
+    ESCRIBIR "===== MEDIO DE TRANSPORTE (5 km por Loja) ====="
+    ESCRIBIR "1 = Bus urbano"
+    ESCRIBIR "2 = Taxi"
+    ESCRIBIR "3 = Bicicleta"
+    ESCRIBIR "4 = Caminar"
+    ESCRIBIR "Seleccione opción:"
+    LEER opcion
+    SEGÚN‑SEA opcion HACER
+        CASO 1: ESCRIBIR "Tiempo estimado: 20 min → Medio económico, tiene paradas frecuentes"
+        CASO 2: ESCRIBIR "Tiempo estimado: 10 min → Más rápido, costo más alto"
+        CASO 3: ESCRIBIR "Tiempo estimado: 18 min → Económico y saludable"
+        CASO 4: ESCRIBIR "Tiempo estimado: 45 min → Sin costo, más lento"
+        OTRO‑CASO: ESCRIBIR "Opción de transporte inválida"
+    FIN‑SEGÚN‑SEA
+FIN
