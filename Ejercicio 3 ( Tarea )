@@ -1,0 +1,22 @@
+INICIO
+    DEFINIR es_estudiante, tiene_carnet, autorizacion COMO CARACTER
+    ESCRIBIR "¿Es estudiante? (S/N)"
+    LEER es_estudiante
+    SI es_estudiante = "S" ENTONCES
+        ESCRIBIR "¿Tiene carné vigente? (S/N)"
+        LEER tiene_carnet
+        SI tiene_carnet = "S" ENTONCES
+            ESCRIBIR "Acceso permitido"
+        SINO
+            ESCRIBIR "Acceso denegado"
+        FIN SI
+    SINO
+        ESCRIBIR "¿Tiene autorización especial? (S/N)"
+        LEER autorizacion
+        SI autorizacion = "S" ENTONCES
+            ESCRIBIR "Ingreso temporal"
+        SINO
+            ESCRIBIR "Acceso denegado"
+        FIN SI
+    FIN SI
+FIN
