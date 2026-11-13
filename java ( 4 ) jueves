@@ -1,0 +1,17 @@
+//Plan de materias según semestre y rendimiento
+Scanner sc = new Scanner(System.in);
+System.out.print("Semestre actual (1-4): ");
+int semestre = sc.nextInt();
+System.out.print("Promedio actual: ");
+double promedio = sc.nextDouble();
+int materias = 0;
+switch (semestre) {
+    case 1: case 2: materias = 5; break;
+    case 3: case 4: materias = 4; break;
+    default: System.out.println("Semestre inválido"); return;
+}
+if (promedio >= 8.5) materias++;
+else if (promedio < 7) materias--;
+if (materias < 3) materias = 3;
+if (materias > 6) materias = 6;
+System.out.println("Materias recomendadas: " + materias);
