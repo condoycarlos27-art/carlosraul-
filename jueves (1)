@@ -1,0 +1,18 @@
+Algoritmo ImpuestoContribuyente
+   Definir tipo Como Entero
+   Definir ingreso, impuesto Como Real
+   Escribir "Tipo (1=Est, 2=Ind, 3=Emp, 4=Empresa): "
+   Leer tipo
+   Escribir "Ingreso anual: "
+   Leer ingreso
+   impuesto <- 0
+   según_sea tipo hacer
+      1: si ingreso >= 5000 entonces impuesto <- ingreso * 0.05 fin_si
+      2: impuesto <- ingreso * 0.10
+      3: impuesto <- ingreso * 0.12
+         si ingreso > 20000 entonces impuesto <- impuesto + ingreso * 0.02 fin_si
+      4: impuesto <- ingreso * 0.15
+      si_no: Escribir "Tipo inválido"
+   fin_según
+   Escribir "Impuesto a pagar: $", impuesto
+FinAlgoritmo
