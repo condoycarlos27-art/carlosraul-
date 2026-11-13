@@ -1,0 +1,16 @@
+//Conversor de monedas con comisión
+Scanner sc = new Scanner(System.in);
+System.out.print("Código (1=EUR, 2=GBP, 3=JPY, 4=MXN): ");
+int codigo = sc.nextInt();
+System.out.print("Monto en USD: ");
+double monto = sc.nextDouble();
+double tasa = 0, comision = 0;
+switch (codigo) {
+    case 1: tasa = 0.92; comision = 0.01; break;
+    case 2: tasa = 0.78; comision = 0.01; break;
+    case 3: tasa = 149; comision = 0.015; break;
+    case 4: tasa = 17.2; comision = 0.02; break;
+    default: System.out.println("Código inválido"); return;
+}
+double resultado = monto * tasa * (1 - comision);
+System.out.println("Resultado: " + resultado + " | Comisión: " + (monto * comision));
