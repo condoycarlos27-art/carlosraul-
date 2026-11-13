@@ -1,0 +1,21 @@
+Algoritmo DescuentoComercio
+   Definir categoria, cantidad Como Entero
+   Definir precio, descuento, total Como Real
+   Escribir "Categoría (1-4): "
+   Leer categoria
+   Escribir "Cantidad: "
+   Leer cantidad
+   Escribir "Precio unitario: "
+   Leer precio
+   descuento <- 0
+   según_sea categoria hacer
+      1: si cantidad >= 10 entonces descuento <- 0.05 fin_si
+      2: si cantidad >= 5 entonces descuento <- 0.10 fin_si
+      3: descuento <- 0.03
+      4: descuento <- 0
+      si_no: Escribir "Categoría inválida"
+   fin_según
+   total <- precio * cantidad * (1 - descuento)
+   si total > 100 entonces total <- total * 0.98 fin_si
+   Escribir "Total a pagar: $", total
+FinAlgoritmo
