@@ -1,0 +1,17 @@
+Algoritmo ConversorMonedas
+   Definir codigo Como Entero
+   Definir monto, tasa, comision, resultado Como Real
+   Escribir "Código (1=EUR, 2=GBP, 3=JPY, 4=MXN): "
+   Leer codigo
+   Escribir "Monto en USD: "
+   Leer monto
+   según_sea codigo hacer
+      1: tasa <- 0.92; comision <- 0.01
+      2: tasa <- 0.78; comision <- 0.01
+      3: tasa <- 149; comision <- 0.015
+      4: tasa <- 17.2; comision <- 0.02
+      si_no: Escribir "Código inválido"; FinAlgoritmo
+   fin_según
+   resultado <- monto * tasa * (1 - comision)
+   Escribir "Resultado: ", resultado, " | Comisión: ", monto * comision
+FinAlgoritmo
