@@ -1,0 +1,14 @@
+#Impuesto por tipo de contribuyente
+tipo = int(input("Tipo (1=Est, 2=Ind, 3=Emp, 4=Empresa): "))
+ingreso = float(input("Ingreso anual: "))
+impuesto = 0.0
+match tipo:
+    case 1:
+        if ingreso >= 5000: impuesto = ingreso * 0.05
+    case 2: impuesto = ingreso * 0.10
+    case 3:
+        impuesto = ingreso * 0.12
+        if ingreso > 20000: impuesto += ingreso * 0.02
+    case 4: impuesto = ingreso * 0.15
+    case _: print("Tipo inválido")
+print(f"Impuesto a pagar: ${impuesto:.2f}")
