@@ -1,0 +1,12 @@
+#Clasificador de nivel académico
+promedio = float(input("Promedio: "))
+repro = int(input("Materias reprobadas: "))
+nivel = 4
+if promedio >= 9 and repro == 0: nivel = 1
+elif promedio >= 8 and repro <= 1: nivel = 2
+elif promedio >= 7: nivel = 3
+match nivel:
+    case 1: print("Excelente - Continúa así")
+    case 2: print("Bueno - Refuerza debilidades")
+    case 3: print("Regular - Necesitas más estudio")
+    case 4: print("En riesgo - Busca tutoría")
