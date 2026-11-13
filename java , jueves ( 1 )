@@ -1,0 +1,16 @@
+// Impuesto por tipo de contribuyente
+Scanner sc = new Scanner(System.in);
+System.out.print("Tipo (1=Est, 2=Ind, 3=Emp, 4=Empresa): ");
+int tipo = sc.nextInt();
+System.out.print("Ingreso anual: ");
+double ingreso = sc.nextDouble();
+double impuesto = 0.0;
+switch (tipo) {
+    case 1: if (ingreso >= 5000) impuesto = ingreso * 0.05; break;
+    case 2: impuesto = ingreso * 0.10; break;
+    case 3: impuesto = ingreso * 0.12;
+            if (ingreso > 20000) impuesto += ingreso * 0.02; break;
+    case 4: impuesto = ingreso * 0.15; break;
+    default: System.out.println("Tipo inválido");
+}
+System.out.println("Impuesto a pagar: $" + impuesto);
