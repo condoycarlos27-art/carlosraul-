@@ -1,0 +1,18 @@
+Algoritmo PlanMaterias
+   Definir semestre, materias Como Entero
+   Definir promedio Como Real
+   Escribir "Semestre actual (1-4): "
+   Leer semestre
+   Escribir "Promedio actual: "
+   Leer promedio
+   según_sea semestre hacer
+      1, 2: materias <- 5
+      3, 4: materias <- 4
+      si_no: Escribir "Semestre inválido"; FinAlgoritmo
+   fin_según
+   si promedio >= 8.5 entonces materias <- materias + 1
+   si_no si promedio < 7 entonces materias <- materias - 1 fin_si
+   si materias < 3 entonces materias <- 3 fin_si
+   si materias > 6 entonces materias <- 6 fin_si
+   Escribir "Materias recomendadas: ", materias
+FinAlgoritmo
