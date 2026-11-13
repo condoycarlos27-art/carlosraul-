@@ -1,0 +1,18 @@
+Algoritmo NivelAcademico
+   Definir promedio Como Real
+   Definir repro, nivel Como Entero
+   Escribir "Promedio: "
+   Leer promedio
+   Escribir "Materias reprobadas: "
+   Leer repro
+   nivel <- 4
+   si promedio >= 9 y repro = 0 entonces nivel <- 1
+   si_no si promedio >= 8 y repro <= 1 entonces nivel <- 2
+   si_no si promedio >= 7 entonces nivel <- 3 fin_si
+   según_sea nivel hacer
+      1: Escribir "Excelente - Continúa así"
+      2: Escribir "Bueno - Refuerza debilidades"
+      3: Escribir "Regular - Necesitas más estudio"
+      4: Escribir "En riesgo - Busca tutoría"
+   fin_según
+FinAlgoritmo
