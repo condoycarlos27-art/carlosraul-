@@ -1,0 +1,9 @@
+from builtins import input
+
+viajes_por_dia = int(input("Ingrese viajes por día: "))
+costo_pasaje = float(input("Ingrese costo del pasaje: $"))
+dias_semana = int(input("Ingrese días que viaja a la semana: "))
+# Proceso
+gasto_total = viajes_por_dia * costo_pasaje * dias_semana
+# Salida
+print(f"El gasto total semanal es: ${gasto_total:.2f}")
