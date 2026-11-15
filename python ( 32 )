@@ -1,0 +1,33 @@
+# Programa para registro de ventas diarias
+total_ventas = 0
+contador_dias = 0
+dias_mayor_500 = 0
+venta_maxima = 0
+dia_venta_max = 1
+
+venta = float(input("Ingrese venta del día (-1 para terminar): "))
+
+while venta != -1:
+    contador_dias = contador_dias + 1
+    total_ventas = total_ventas + venta
+
+    if venta > 500:
+        dias_mayor_500 = dias_mayor_500 + 1
+
+    if venta > venta_maxima:
+        venta_maxima = venta
+        dia_venta_max = contador_dias
+
+    venta = float(input("Ingrese venta del día (-1 para terminar): "))
+
+# Cálculo del promedio
+if contador_dias > 0:
+    promedio_ventas = total_ventas / contador_dias
+else:
+    promedio_ventas = 0
+
+# Salidas
+print("Total de ventas:", total_ventas)
+print("Promedio de ventas:", promedio_ventas)
+print("Días con ventas mayores a $500:", dias_mayor_500)
+print(f"Mayor venta fue el día {dia_venta_max} con valor: {venta_maxima}")
