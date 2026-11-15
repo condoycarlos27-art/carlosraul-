@@ -1,0 +1,11 @@
+a = int(input("Primer número: "))
+b = int(input("Segundo número: "))
+
+original_a, original_b = a, b
+
+while b != 0:
+    resto = a % b
+    a = b
+    b = resto
+
+print(f"El MCD de {original_a} y {original_b} es: {a}")
