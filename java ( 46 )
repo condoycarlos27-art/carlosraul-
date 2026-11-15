@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class CuboAreaVolumen {
+    public static void main(String[] args) {
+        double lado, area, volumen;
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Ingrese lado del cubo: ");
+            lado = entrada.nextDouble();
+            area = 6 * lado * lado;
+            volumen = lado * lado * lado;
+            System.out.println("Área total: " + area);
+            System.out.println("Volumen: " + volumen);
+        }
+    }
+}
