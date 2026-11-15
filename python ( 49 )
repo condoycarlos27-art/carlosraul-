@@ -1,0 +1,12 @@
+# Cálculo de precio con descuento e IVA
+precio_original = float(input("Ingrese el precio original del artículo: "))
+
+descuento = precio_original * 0.20
+precio_con_descuento = precio_original - descuento
+iva = precio_con_descuento * 0.15
+precio_final = precio_con_descuento + iva
+
+print("-----------------------------")
+print("Precio con descuento: $", precio_con_descuento)
+print("IVA (15%): $", iva)
+print("Precio final: $", precio_final)
