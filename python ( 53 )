@@ -1,0 +1,24 @@
+# Problema 8: Conversor de unidades
+print("===== CONVERSOR DE UNIDADES =====")
+print("1 = Kilómetros a metros")
+print("2 = Metros a centímetros")
+print("3 = Horas a minutos")
+print("4 = Salir")
+opcion = int(input("Seleccione opción: "))
+
+if opcion == 1:
+    valor = float(input("Ingrese valor en kilómetros: "))
+    resultado = valor * 1000
+    print(f"{valor} km = {resultado} m")
+elif opcion == 2:
+    valor = float(input("Ingrese valor en metros: "))
+    resultado = valor * 100
+    print(f"{valor} m = {resultado} cm")
+elif opcion == 3:
+    valor = float(input("Ingrese valor en horas: "))
+    resultado = valor * 60
+    print(f"{valor} h = {resultado} min")
+elif opcion == 4:
+    print("Saliendo del conversor…")
+else:
+    print("Opción inválida")
