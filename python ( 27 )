@@ -1,0 +1,14 @@
+capital = float(input("Capital inicial: "))
+deposito_mensual = float(input("Depósito mensual: "))
+meses = int(input("Número de meses: "))
+tasa = 0.015  # 1.5% mensual
+
+saldo = capital
+print(f"Mes 0 → Saldo inicial: ${saldo:.2f}")
+
+for i in range(1, meses + 1):
+    saldo = saldo * (1 + tasa)
+    saldo += deposito_mensual
+    print(f"Mes {i} → Saldo: ${saldo:.2f}")
+
+print(f"\n💰 Saldo final: ${saldo:.2f}")
