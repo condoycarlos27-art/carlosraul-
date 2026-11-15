@@ -1,0 +1,14 @@
+# Programa para calcular hipotenusa y área de triángulo rectángulo
+import math
+
+# Entradas
+a = float(input("Ingrese cateto 1: "))
+b = float(input("Ingrese cateto 2: "))
+
+# Cálculos
+h = math.sqrt(a * 2 + b * 2)
+area = (a * b) / 2
+
+# Salidas
+print("Hipotenusa:", h)
+print("Área del triángulo:", area)
