@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class PromedioNNotas {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+        
+        System.out.print("Ingrese la cantidad de notas: ");
+        int N = scanner.nextInt();
+        
+        double suma = 0;
+        int i = 1;
+        
+        while (i <= N) {
+            System.out.print("Ingrese la nota " + i + ": ");
+            double nota = scanner.nextDouble();
+            suma += nota;
+            i++;
+        }
+        
+        double promedio = suma / N;
+        System.out.printf("El promedio es: %.2f%n", promedio);
+        }
+    }
+}
