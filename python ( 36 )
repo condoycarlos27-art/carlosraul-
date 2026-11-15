@@ -1,0 +1,21 @@
+# Programa para cálculo de costo de envío
+peso_real = float(input("Ingrese peso real del paquete: "))
+largo = float(input("Ingrese largo del paquete: "))
+ancho = float(input("Ingrese ancho del paquete: "))
+alto = float(input("Ingrese alto del paquete: "))
+
+# Cálculo del peso volumétrico
+peso_vol = (largo * ancho * alto) / 5000
+
+# Seleccionar el peso mayor
+if peso_real > peso_vol:
+    peso_cobrar = peso_real
+else:
+    peso_cobrar = peso_vol
+
+# Costo total
+costo_total = peso_cobrar * 2.50
+
+# Salidas
+print("Peso a cobrar:", peso_cobrar)
+print("Costo total de envío:", costo_total)
