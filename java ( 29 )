@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class DescuentoCompra {
+    public static void main(String[] args) {
+        double monto_compra, valor_descuento, total_pagar;
+        int descuento_base, descuento_total;
+        String es_frecuente;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+        System.out.print("Ingrese monto de compra: ");
+        monto_compra = entrada.nextDouble();
+        entrada.nextLine();
+
+        System.out.print("¿Cliente frecuente? (S/N): ");
+        es_frecuente = entrada.nextLine().toUpperCase();
+
+        if (monto_compra >= 500) {
+            descuento_base = 15;
+        } else if (monto_compra >= 300) {
+            descuento_base = 10;
+        } else if (monto_compra >= 100) {
+            descuento_base = 5;
+        } else {
+            descuento_base = 0;
+        }
+
+        if (es_frecuente.equals("S")) {
+            descuento_total = descuento_base + 3;
+        } else {
+            descuento_total = descuento_base;
+        }
+
+        valor_descuento = monto_compra * descuento_total / 100;
+        total_pagar = monto_compra - valor_descuento;
+
+        System.out.println("Descuento total (%): " + descuento_total);
+        System.out.println("Total a pagar: $" + total_pagar);
+        }
+    }
+}
