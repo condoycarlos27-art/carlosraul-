@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class CafeteriaUTPL {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("===== CAFETERÍA UTPL =====");
+            System.out.println("1 = Café ($1.50)");
+            System.out.println("2 = Jugo ($1.20)");
+            System.out.println("3 = Sándwich ($2.50)");
+            System.out.println("4 = Salir");
+            System.out.print("Seleccione opción: ");
+            int opcion = sc.nextInt();
+            switch(opcion){
+                case 1 -> System.out.printf("Precio a pagar: $1.50%n");
+                case 2 -> System.out.printf("Precio a pagar: $1.20%n");
+                case 3 -> System.out.printf("Precio a pagar: $2.50%n");
+                case 4 -> System.out.println("Gracias por su visita, ¡hasta pronto!");
+                default -> System.out.println("Opción inválida");
+            }
+        }
+    }
+}
