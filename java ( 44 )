@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class ParImpar {
+    public static void main(String[] args) {
+        int num;
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Ingrese un número entero: ");
+            num = entrada.nextInt();
+            if(num % 2 == 0) {
+                System.out.println("El número es par");
+            } else {
+                System.out.println("El número es impar");
+            }
+        }
+    }
+}
