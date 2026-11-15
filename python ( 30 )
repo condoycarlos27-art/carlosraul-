@@ -1,0 +1,15 @@
+# Entradas
+monto_prestamo = float(input("Ingrese el monto del préstamo: "))
+tasa_trimestral = float(input("Ingrese la tasa trimestral (en decimal, por ejemplo 0.05 para 5%): "))
+numero_trimestres = int(input("Ingrese el número de trimestres: "))
+porcentaje_abono = float(input("Ingrese el porcentaje del abono extraordinario: "))
+
+# Cálculos
+monto_total = monto_prestamo * (1 + tasa_trimestral) ** numero_trimestres
+valor_abono = monto_total * (porcentaje_abono / 100)
+monto_final = monto_total - valor_abono
+
+# Salidas
+print(f"Monto antes del abono: {monto_total:.2f}")
+print(f"Valor del abono extraordinario: {valor_abono:.2f}")
+print(f"Monto final a cancelar: {monto_final:.2f}")
