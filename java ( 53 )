@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class ConversorUnidades {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+        System.out.println("===== CONVERSOR DE UNIDADES =====");
+        System.out.println("1 = Kilómetros a metros");
+        System.out.println("2 = Metros a centímetros");
+        System.out.println("3 = Horas a minutos");
+        System.out.println("4 = Salir");
+        System.out.print("Seleccione opción: ");
+        int opcion = sc.nextInt();
+        double valor, resultado;
+        switch(opcion){
+            case 1 -> {
+                System.out.print("Ingrese valor en kilómetros: ");
+                valor = sc.nextDouble();
+                resultado = valor *1000;
+                System.out.println(valor+" km = "+resultado+" m");
+            }
+            case 2 -> {
+                System.out.print("Ingrese valor en metros: ");
+                valor = sc.nextDouble();
+                resultado = valor *100;
+                System.out.println(valor+" m = "+resultado+" cm");
+            }
+            case 3 -> {
+                System.out.print("Ingrese valor en horas: ");
+                valor = sc.nextDouble();
+                resultado = valor *60;
+                System.out.println(valor+" h = "+resultado+" min");
+            }
+            case 4 -> System.out.println("Saliendo del conversor…");
+            default -> System.out.println("Opción inválida");
+        }
+        }
+    }
+}
