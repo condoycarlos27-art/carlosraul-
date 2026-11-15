@@ -1,0 +1,8 @@
+salario = 1500
+print (f"Año 1: ${salario:.2f}")
+
+for año in range ( 2,7):
+    salario = salario * 1.10
+    print(f"Año { año}: ${salario:.2f}")
+
+print(f"Salario final después de 6 años: ${salario:.2f}")
