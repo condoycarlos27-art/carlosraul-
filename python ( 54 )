@@ -1,0 +1,19 @@
+# Problema 7: Día de la semana
+num_dia = int(input("Ingrese número del día (1‑7): "))
+
+if num_dia == 1:
+    print("Lunes → Día de clases")
+elif num_dia == 2:
+    print("Martes → Día de clases")
+elif num_dia == 3:
+    print("Miércoles → Día de clases")
+elif num_dia == 4:
+    print("Jueves → Día de clases")
+elif num_dia == 5:
+    print("Viernes → Día de clases")
+elif num_dia == 6:
+    print("Sábado → Fin de semana")
+elif num_dia == 7:
+    print("Domingo → Fin de semana")
+else:
+    print("Número de día 
