@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class SignoNumero {
+    public static void main(String[] args) {
+        double num;
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Ingrese un número: ");
+            num = entrada.nextDouble();
+            if(num > 0) {
+                System.out.println("Es positivo");
+            } else if(num < 0) {
+                System.out.println("Es negativo");
+            } else {
+                System.out.println("Es neutro (cero)");
+            }
+        }
+    }
+}
