@@ -1,0 +1,14 @@
+decimal = int(input("Número decimal: "))
+digitos = "0123456789ABCDEF"
+
+if decimal == 0:
+    hex_valor = "0"
+else:
+    hex_valor = ""
+    n = decimal
+    while n > 0:
+        residuo = n % 16
+        hex_valor = digitos[residuo] + hex_valor
+        n = n // 16
+
+print(f"Hexadecimal: {hex_valor}")
