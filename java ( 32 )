@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class NumeroArmstrong {
+    public static void main(String[] args) {
+        int numero, original, digito, suma_cubos;
+
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Ingrese un número: ");
+            numero = entrada.nextInt();
+
+            original = numero;
+            suma_cubos = 0;
+
+            while (numero > 0) {
+                digito = numero % 10;
+                suma_cubos = suma_cubos + digito * digito * digito;
+                numero = numero / 10;
+            }
+
+            if (suma_cubos == original) {
+                System.out.println("Es número de Armstrong");
+            } else {
+                System.out.println("NO es número de Armstrong");
+            }
+        }
+    }
+}
