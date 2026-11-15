@@ -1,0 +1,11 @@
+monto = float(input("Ingrese el monto de la compra: $ "))
+
+if monto >=200:
+    descuento= monto * 0,15
+elif monto>=100:
+    descuento= monto * 0,10
+else:
+    descuento = monto * 0,05
+
+total_a_pagar = monto - descuento 
+print (f"Monto a pagar despues del descuento: ${tota_a_pagar:.2f}")
