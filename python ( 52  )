@@ -1,0 +1,21 @@
+# Problema 6: Menú cafetería UTPL
+print("===== CAFETERÍA UTPL =====")
+print("1 = Café ($1.50)")
+print("2 = Jugo ($1.20)")
+print("3 = Sándwich ($2.50)")
+print("4 = Salir")
+opcion = int(input("Seleccione opción: "))
+
+if opcion == 1:
+    precio = 1.50
+    print(f"Precio a pagar: ${precio:.2f}")
+elif opcion == 2:
+    precio = 1.20
+    print(f"Precio a pagar: ${precio:.2f}")
+elif opcion == 3:
+    precio = 2.50
+    print(f"Precio a pagar: ${precio:.2f}")
+elif opcion == 4:
+    print("Gracias por su visita, ¡hasta pronto!")
+else:
+    print("Opción invál
