@@ -1,0 +1,15 @@
+sueldo = float( input( "Sueldo base"))
+productividad = float (input("Indice de productividad"))
+
+if productividad >= 90:
+    porcentaje = 0.20
+elif productividad >= 70:
+    porcentaje = 0.10
+elif productividad >= 50: 
+    porcentaje = 0.50
+
+bono = sueldo * porcentaje 
+total = sueldo + bono 
+
+print (f"Bono: ${bono:.2f}({porcentaje*100:.0f}%)")
+print (f"Total a recibir: ${total:.2f}")
