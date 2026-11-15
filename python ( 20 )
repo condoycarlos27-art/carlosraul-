@@ -1,0 +1,16 @@
+a1 = float ( input( "Angulo1: "))
+a2 = float ( input( " Angulo2: "))
+a3 = float ( input( "Angulo3: "))
+
+suma = a1 + a2 + a3
+
+if suma != 180:
+  print("ERROR: no forma un triangulo ( deben sumar 180°)")
+else:
+  mayor = max (a1,a2,a3)
+if mayor < 90:
+  print("Triangulo ACUTANGULO")
+elif mayor == 90:
+  print("Triangulo RECTANGULO")
+else:
+   print("Triangulo OBTUSANGULO")      
