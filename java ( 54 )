@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class DiaSemana {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Ingrese número del día (1‑7): ");
+            int numDia = sc.nextInt();
+            switch(numDia){
+                case 1 -> System.out.println("Lunes → Día de clases");
+                case 2 -> System.out.println("Martes → Día de clases");
+                case 3 -> System.out.println("Miércoles → Día de clases");
+                case 4 -> System.out.println("Jueves → Día de clases");
+                case 5 -> System.out.println("Viernes → Día de clases");
+                case 6 -> System.out.println("Sábado → Fin de semana");
+                case 7 -> System.out.println("Domingo → Fin de semana");
+                default -> System.out.println("Número de día inválido");
+            }
+        }
+    }
+}
