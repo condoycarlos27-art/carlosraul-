@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class DolaresAPesos {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+        
+        System.out.print("Ingrese la cantidad en dólares: $");
+        double dolares = scanner.nextDouble();
+        
+        System.out.print("Ingrese el tipo de cambio actual: ");
+        double tipo_cambio = scanner.nextDouble();
+        
+        double pesos = dolares * tipo_cambio;
+        
+        System.out.printf("Equivalente en pesos mexicanos: $%.2f%n", pesos);
+        
+        }
+    }
+}     
