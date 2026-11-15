@@ -1,0 +1,10 @@
+N = int(input("Ingresa la cantidad de notas: "))
+
+suma = 0 
+i = 1
+while  i<= N:
+    nota = float ( input(f"Ingrese laa nota{i}: "))
+    suma += nota 
+    i += 1
+    promedio = suma/N
+    print(f"El promedio es; {promedio:.2f}")
