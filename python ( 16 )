@@ -1,0 +1,8 @@
+potencia = float (input("Potencia en watts: "))
+horas = float (input ("Horas diarias de uso: "))
+tarifa = float ( input ( "Tarifa por kWh: "))
+
+consumo = ( potencia / 1000) * horas * 30 
+costo = consumo * tarifa 
+print (f"Consumo mensual: {consumo:.2f}kWh")
+print (f"Costo total: ${costo:.2f}")
