@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class DolaresASoles {
+    public static void main(String[] args) {
+        final double CAMBIO = 3.95;
+        try (Scanner entrada = new Scanner(System.in)) {
+            double dolares, soles;
+            System.out.print("Ingrese cantidad en dólares: ");
+            dolares = entrada.nextDouble();
+            soles = dolares * CAMBIO;
+            System.out.println("Equivalente en soles: " + soles);
+        }
+    }
+}
