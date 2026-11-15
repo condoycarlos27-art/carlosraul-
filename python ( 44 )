@@ -1,0 +1,8 @@
+# Suma de la serie armónica
+N = int(input("Ingrese valor de N: "))
+suma = 0
+
+for i in range(1, N + 1):
+    suma = suma + 1 / i
+
+print("Suma de la serie:", suma)
