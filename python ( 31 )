@@ -1,0 +1,24 @@
+#Programa para calcular porcentaje de beca
+# Entradas
+promedio = float(input("Ingrese el promedio del estudiante: "))
+reprobadas = int(input("Ingrese cantidad de asignaturas reprobadas: "))
+primer_ciclo = input("¿Es primer ciclo? (S/N): ").upper()
+
+# Inicializar
+porcentaje_beca = 0
+
+# Reglas selectivas
+if promedio >= 9.0 and reprobadas == 0 and primer_ciclo == "S":
+    porcentaje_beca = 100
+elif promedio >= 8.0 and reprobadas <= 1:
+    porcentaje_beca = 70
+elif promedio >= 7.0 and reprobadas <= 2:
+    porcentaje_beca = 40
+else:
+    porcentaje_beca = 0
+
+# Salidas
+if porcentaje_beca > 0:
+    print(f"Beca aprobada, porcentaje: {porcentaje_beca} %")
+else:
+    print("Beca no aprobada")
