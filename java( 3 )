@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class AccesoLaboratorio {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+        System.out.print("¿Es estudiante? (S/N): ");
+        String esEstudiante = sc.next().toUpperCase();
+        if(esEstudiante.equals("S")){
+            System.out.print("¿Tiene carné vigente? (S/N): ");
+            String tieneCarnet = sc.next().toUpperCase();
+            if(tieneCarnet.equals("S")){
+                System.out.println("Acceso permitido");
+            }else{
+                System.out.println("Acceso denegado");
+            }
+        }else{
+            System.out.print("¿Tiene autorización especial? (S/N): ");
+            String autorizacion = sc.next().toUpperCase();
+            if(autorizacion.equals("S")){
+                System.out.println("Ingreso temporal");
+            }else{
+                System.out.println("Acceso denegado");
+            }
+        }
+        }
+    }
+}
