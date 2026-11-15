@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Consumo_Electrico {
+    public static void main(String[] args) {
+        double potencia, horas_diarias, tarifa, consumo_mensual, costo_total;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+            System.out.print("Ingrese potencia del aparato en Watts: ");
+            potencia = entrada.nextDouble();
+
+            System.out.print("Horas de uso diario: ");
+            horas_diarias = entrada.nextDouble();
+
+            System.out.print("Tarifa por kWh: ");
+            tarifa = entrada.nextDouble();
+
+            consumo_mensual = (potencia / 1000) * horas_diarias * 30;
+            costo_total = consumo_mensual * tarifa;
+
+            System.out.println("Consumo mensual: " + consumo_mensual + " kWh");
+            System.out.println("Costo total mensual: $" + costo_total);
+        }
+    }
+}
