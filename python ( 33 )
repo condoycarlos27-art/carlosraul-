@@ -1,0 +1,10 @@
+# Cálculo costo viaje interprovincial Loja‑Guayaquil
+print("=== CÁLCULO COSTO DE VIAJE LOJA‑GUAYAQUIL ===")
+pasajes = int(input("Ingrese cantidad de pasajes: "))
+precio_por_pasaje = float(input("Valor de cada pasaje ($): "))
+gasto_alimentacion = float(input("Gasto de alimentación ($): "))
+
+total = pasajes * precio_por_pasaje + gasto_alimentacion
+
+print("----------------------------------------")
+print(f"Total a pagar por el viaje: ${total:.2f}")
