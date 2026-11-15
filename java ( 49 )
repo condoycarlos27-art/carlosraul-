@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class DescuentoCompra200 {
+    public static void main(String[] args) {
+        double monto, total;
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Ingrese monto de compra: ");
+            monto = entrada.nextDouble();
+            if(monto > 200) {
+                total = monto * 0.85;
+                System.out.println("Tiene descuento del 15% → Total a pagar: " + total);
+            } else {
+                total = monto;
+                System.out.println("Sin descuento → Total a pagar: " + total);
+            }
+        }
+    }
+}
