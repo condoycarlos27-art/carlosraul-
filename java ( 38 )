@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Circunferencia {
+    public static void main(String[] args) {
+        final double PI = 3.1416;
+        double radio, longitud, area;
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Ingrese el radio de la circunferencia: ");
+            radio = entrada.nextDouble();
+
+            longitud = 2 * PI * radio;
+            area = PI * radio * radio;
+
+            System.out.println("-----------------------------");
+            System.out.println("Longitud de la circunferencia: " + longitud);
+            System.out.println("Área del círculo: " + area);
+        }
+    }
+}
