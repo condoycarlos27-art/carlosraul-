@@ -1,0 +1,15 @@
+# Cálculo de pago por horas de trabajo
+horas = float(input("Ingrese horas trabajadas: "))
+es_nocturno = input("¿Es turno nocturno? (S/N): ").upper()
+
+tarifa_base = horas * 1.50
+
+if horas > 8:
+    tarifa_base = tarifa_base * 1.25
+
+if es_nocturno == "S":
+    total = tarifa_base * 1.30
+else:
+    total = tarifa_base
+
+print("Total a pagar: $", total)
