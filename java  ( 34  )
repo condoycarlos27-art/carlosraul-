@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class ContadorAlumnos {
+    public static void main(String[] args) {
+        int N, aprobados = 0, reprobados = 0;
+        double nota;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+        System.out.print("Ingrese el número de alumnos: ");
+        N = entrada.nextInt();
+
+        for (int contador = 1; contador <= N; contador++) {
+            System.out.print("Ingrese la nota del alumno " + contador + " (0‑10): ");
+            nota = entrada.nextDouble();
+            if (nota >= 7) {
+                aprobados++;
+            } else {
+                reprobados++;
+            }
+        }
+
+        System.out.println("-----------------------------");
+        System.out.println("Total de alumnos: " + N);
+        System.out.println("✅ Aprobados: " + aprobados);
+        System.out.println("❌ Reprobados: " + reprobados);
+        }
+    }
+}
