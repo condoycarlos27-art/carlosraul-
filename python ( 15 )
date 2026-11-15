@@ -1,0 +1,9 @@
+monto = float ( input(" Ingrese el monto del prestamo: "))
+tasa = float ( input(" Ingrese la tasa mensula (%): "))
+mese = int ( input ( " Ingrese el numero de meses: " ))
+
+interes_total = monto * ( tasa / 100) * meses
+cuota = ( monto + interes_total) / meses 
+
+print (f"Interes total: ${interes_total:.2f}") 
+print (f"Cuota mensual; ${cuota:.2f}")
