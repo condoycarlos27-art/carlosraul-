@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class PagoHorasTrabajo {
+    public static void main(String[] args) {
+        double horas, tarifa_base, total;
+        String es_nocturno;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+        System.out.print("Ingrese horas trabajadas: ");
+        horas = entrada.nextDouble();
+        entrada.nextLine(); // Limpiar salto de línea
+
+        System.out.print("¿Es turno nocturno? (S/N): ");
+        es_nocturno = entrada.nextLine().toUpperCase();
+
+        tarifa_base = horas * 1.50;
+
+        if (horas > 8) {
+            tarifa_base = tarifa_base * 1.25;
+        }
+
+        if (es_nocturno.equals("S")) {
+            total = tarifa_base * 1.30;
+        } else {
+            total = tarifa_base;
+        }
+
+        System.out.println("Total a pagar: $" + total);
+        }
+    }
+}
