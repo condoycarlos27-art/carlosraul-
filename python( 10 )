@@ -1,0 +1,7 @@
+suma = 0 
+numero = int( input("Ingrese un numero (0 para terminar ): "))
+while numero != 0:
+    suma = suma + numero 
+    numero = int(input("Ingrese un numero ( 0 para terminar ): "))
+
+    print(f"La suma total es: {suma}")
