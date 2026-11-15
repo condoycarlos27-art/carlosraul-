@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class SumaCubosDigitos {
+    public static void main(String[] args) {
+        int numero, original, digito, suma_cubos;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+            System.out.print("Ingrese un número: ");
+            numero = entrada.nextInt();
+
+            original = numero;
+            suma_cubos = 0;
+
+            while (numero > 0) {
+                digito = numero % 10;
+                suma_cubos = suma_cubos + digito * digito * digito;
+                numero = numero / 10;
+            }
+
+            System.out.println("Número original: " + original);
+            System.out.println("Suma de cubos de sus dígitos: " + suma_cubos);
+        }
+    }
+}
