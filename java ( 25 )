@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+class CoordenadasPolares {
+    public static void main(String[] args) {
+        double r, theta_grados, theta_rad, x, y;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+            System.out.print("Ingrese radio: ");
+            r = entrada.nextDouble();
+
+            System.out.print("Ingrese ángulo en grados: ");
+            theta_grados = entrada.nextDouble();
+
+            theta_rad = theta_grados * Math.PI / 180;
+            x = r * Math.cos(theta_rad);
+            y = r * Math.sin(theta_rad);
+
+            System.out.println("Coordenada x: " + x);
+            System.out.println("Coordenada y: " + y);
+        }
+    }
+}
