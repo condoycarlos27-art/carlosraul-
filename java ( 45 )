@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class PromedioCuatroNotas {
+    public static void main(String[] args) {
+        double n1,n2,n3,n4,prom;
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Nota 1: "); n1=entrada.nextDouble();
+            System.out.print("Nota 2: "); n2=entrada.nextDouble();
+            System.out.print("Nota 3: "); n3=entrada.nextDouble();
+            System.out.print("Nota 4: "); n4=entrada.nextDouble();
+            prom=(n1+n2+n3+n4)/4;
+            System.out.println("Promedio: "+prom);
+        }
+    }
+}
