@@ -1,0 +1,11 @@
+# Cálculo de sueldo con horas extras
+horas = float(input("Ingrese las horas trabajadas: "))
+tarifa = float(input("Ingrese el pago por hora: "))
+
+if horas <= 40:
+    sueldo = horas * tarifa
+else:
+    sueldo = (40 * tarifa) + ((horas - 40) * tarifa * 2)
+
+print("-----------------------------")
+print("El sueldo semanal es: $", sueldo)
