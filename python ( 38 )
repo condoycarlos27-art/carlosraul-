@@ -1,0 +1,15 @@
+# Conversión de coordenadas polares a cartesianas
+import math
+
+# Entradas
+r = float(input("Ingrese radio: "))
+theta_grados = float(input("Ingrese ángulo en grados: "))
+
+# Cálculos
+theta_rad = theta_grados * 3.1416 / 180
+x = r * math.cos(theta_rad)
+y = r * math.sin(theta_rad)
+
+# Salidas
+print("Coordenada x:", x)
+print("Coordenada y:", y)
