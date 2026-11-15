@@ -1,0 +1,16 @@
+# Problema 1: Descuento librería Loja
+es_estudiante = input("¿Es estudiante UTPL? (S/N): ").upper()
+monto = float(input("Ingrese monto de compra: $"))
+
+if es_estudiante == "S":
+    descuento = 20
+    if monto > 30:
+        descuento = descuento + 5
+else:
+    descuento = 10
+    if monto > 50:
+        descuento = descuento + 10
+
+total_pagar = monto - (monto * descuento / 100)
+print(f"Descuento aplicado: {descuento}%")
+print(f"Monto a pagar: ${total_pagar:.2f}")
