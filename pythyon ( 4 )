@@ -1,0 +1,18 @@
+# Problema 4: Cálculo de bono
+antiguedad = float(input("Ingrese años de antigüedad: "))
+sueldo = float(input("Ingrese sueldo mensual: $"))
+es_excelente = input("¿Evaluación excelente? (S/N): ").upper()
+
+if antiguedad > 2:
+    porc_bono = 10
+    if es_excelente == "S":
+        porc_bono += 5
+else:
+    porc_bono = 0
+    if es_excelente == "S":
+        porc_bono = 5
+
+monto_bono = sueldo * porc_bono / 100
+total = sueldo + monto_bono
+print(f"Porcentaje de bono: {porc_bono}%")
+print(f"Sueldo total a recibir: ${total:.2f}")
