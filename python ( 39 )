@@ -1,0 +1,11 @@
+# Cálculo de préstamo con interés simple
+capital = float(input("Ingrese capital del préstamo: "))
+tasa_anual = float(input("Ingrese tasa anual en decimal: "))
+meses = int(input("Ingrese cantidad de meses: "))
+
+# Cálculos
+interes_total = capital * tasa_anual * (meses / 12)
+cuota_mensual = (capital + interes_total) / meses
+
+# Salidas
+print("Interés total:", interes_total)
