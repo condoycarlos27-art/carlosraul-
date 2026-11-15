@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+class CostoEnvio {
+    public static void main(String[] args) {
+        double peso_real, largo, ancho, alto, peso_vol, peso_cobrar, costo_total;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+        System.out.print("Ingrese peso real del paquete: ");
+        peso_real = entrada.nextDouble();
+
+        System.out.print("Ingrese largo del paquete: ");
+        largo = entrada.nextDouble();
+
+        System.out.print("Ingrese ancho del paquete: ");
+        ancho = entrada.nextDouble();
+
+        System.out.print("Ingrese alto del paquete: ");
+        alto = entrada.nextDouble();
+
+        peso_vol = (largo * ancho * alto) / 5000;
+
+        if (peso_real > peso_vol) {
+            peso_cobrar = peso_real;
+        } else {
+            peso_cobrar = peso_vol;
+        }
+
+        costo_total = peso_cobrar * 2.50;
+
+        System.out.println("Peso a cobrar: " + peso_cobrar);
+        System.out.println("Costo total de envío: " + costo_total);
+        }
+    }
+}
