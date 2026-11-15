@@ -1,0 +1,22 @@
+monto_compra = float(input("Ingrese monto de compra: "))
+es_frecuente = input("¿Cliente frecuente? (S/N): ").upper()
+
+if monto_compra >= 500:
+    descuento_base = 15
+elif monto_compra >= 300:
+    descuento_base = 10
+elif monto_compra >= 100:
+    descuento_base = 5
+else:
+    descuento_base = 0
+
+if es_frecuente == "S":
+    descuento_total = descuento_base + 3
+else:
+    descuento_total = descuento_base
+
+valor_descuento = monto_compra * descuento_total / 100
+total_pagar = monto_compra - valor_descuento
+
+print("Descuento total (%):", descuento_total)
+print("Total a pagar: $", total_pagar)
