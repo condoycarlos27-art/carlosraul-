@@ -1,0 +1,26 @@
+dia = int(input("Día: "))
+mes = int(input("Mes: "))
+anio = int(input("Año: "))
+
+# Validar mes
+if mes < 1 or mes > 12:
+    print("Mes inválido")
+else:
+    # Determinar bisiesto
+    if (anio % 4 == 0 and anio % 100 != 0) or (anio % 400 == 0):
+        bisiesto = True
+    else:
+        bisiesto = False
+    
+    # Días máximos
+    if mes == 2:
+        max_dias = 29 if bisiesto else 28
+    elif mes in [4, 6, 9, 11]:
+        max_dias = 30
+    else:
+        max_dias = 31
+    
+    if 1 <= dia <= max_dias:
+        print("FECHA VALIDA")
+    else:
+        print(" FECHA INVÁLIDA")
