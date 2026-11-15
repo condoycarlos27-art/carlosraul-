@@ -1,0 +1,12 @@
+# Programa suma de cubos de dígitos
+numero = int(input("Ingrese un número: "))
+original = numero
+suma_cubos = 0
+
+while numero > 0:
+    digito = numero % 10
+    suma_cubos = suma_cubos + digito ** 3
+    numero = numero // 10  # Quitar el último dígito
+
+print("Número original:", original)
+print("Suma de cubos de sus dígitos:", suma_cubos)
