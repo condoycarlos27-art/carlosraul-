@@ -1,0 +1,16 @@
+# Contador de alumnos aprobados y reprobados
+N = int(input("Ingrese el número de alumnos: "))
+
+aprobados = 0
+reprobados = 0
+
+for contador in range(1, N + 1):
+    nota = float(input(f"Ingrese la nota del alumno {contador} (0‑10): "))
+    if nota >= 7:
+        aprobados = aprobados + 1
+    else:
+        reprobados = reprobados + 1
+
+print("-----------------------------")
+print("Total de alumnos:", N)
+print("✅ Aprobados:", aprobados)
