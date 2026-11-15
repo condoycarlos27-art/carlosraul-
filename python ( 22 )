@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class TrianguloRectangulo {
+    public static void main(String[] args) {
+        double a, b, h, area;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+            System.out.print("Ingrese cateto 1: ");
+            a = entrada.nextDouble();
+
+            System.out.print("Ingrese cateto 2: ");
+            b = entrada.nextDouble();
+
+            h = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+            area = (a * b) / 2;
+
+            System.out.println("Hipotenusa: " + h);
+            System.out.println("Área del triángulo: " + area);
+        }
+    }
+}
