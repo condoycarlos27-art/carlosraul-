@@ -1,0 +1,18 @@
+mport java.util.Scanner;
+
+class Tabla_Multiplicar {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+        
+        System.out.print("Ingrese el número para mostrar su tabla de multiplicar: ");
+        int K = scanner.nextInt();
+        
+        int i = 1;
+        while (i <= 10) {
+            System.out.println(K + " x " + i + " = " + (K * i));
+            i = i + 1;
+        }
+        
+        }
+    }
+}
