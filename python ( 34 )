@@ -1,0 +1,15 @@
+# Programa para calcular valor futuro de anualidad
+import math
+
+# Entradas
+D = float(input("Ingrese depósito mensual: "))
+i = float(input("Ingrese tasa mensual en decimal: "))
+n = int(input("Ingrese cantidad de meses: "))
+
+# Cálculos
+total_depositado = D * n
+VF = D * (((math.pow(1 + i, n)) - 1) / i)
+
+# Salidas
+print("Total depositado:", total_depositado)
+print("Valor futuro de la anualidad:", VF)
