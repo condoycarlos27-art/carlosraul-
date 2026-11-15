@@ -1,0 +1,18 @@
+# Problema 10: Medio de transporte en Loja
+print("===== MEDIO DE TRANSPORTE (5 km por Loja) =====")
+print("1 = Bus urbano")
+print("2 = Taxi")
+print("3 = Bicicleta")
+print("4 = Caminar")
+opcion = int(input("Seleccione opción: "))
+
+if opcion == 1:
+    print("Tiempo estimado: 20 min → Medio económico, tiene paradas frecuentes")
+elif opcion == 2:
+    print("Tiempo estimado: 10 min → Más rápido, costo más alto")
+elif opcion == 3:
+    print("Tiempo estimado: 18 min → Económico y saludable")
+elif opcion == 4:
+    print("Tiempo estimado: 45 min → Sin costo, más lento")
+else:
+    print("Opción de transporte inválida")
