@@ -1,0 +1,10 @@
+# Conversión de temperatura solo si es positiva
+gc = float(input("Ingrese temperatura en grados centígrados: "))
+
+if gc > 0:
+    gf = (9/5) * gc + 32
+    gk = gc + 273.15
+    print("Temperatura en Fahrenheit:", gf)
+    print("Temperatura en Kelvin:", gk)
+else:
+    print("La temperatura no es positiva, no se hace la conversión")
