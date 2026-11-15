@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class CalcularSueldoEmpleado {
+    public static void main(String[] args) {
+        double sueldoBasico, bono, sueldoTotal;
+        int aniosServicio;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+        System.out.print("Ingrese sueldo básico: ");
+        sueldoBasico = entrada.nextDouble();
+        System.out.print("Ingrese años de servicio: ");
+        aniosServicio = entrada.nextInt();
+
+        if (aniosServicio >= 5) {
+            bono = sueldoBasico * 0.10;
+        } else {
+            bono = sueldoBasico * 0.05;
+        }
+
+        sueldoTotal = sueldoBasico + bono;
+
+        System.out.println("Bono: $" + bono);
+        System.out.println("Sueldo total: $" + sueldoTotal);
+
+        }
+    }
+}
