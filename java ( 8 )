@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class DescuentoCompra {
+    public static void main(String[] args) {
+        try (Scanner scanner = new Scanner(System.in)) {
+        
+        System.out.print("Ingrese el monto de la compra: $");
+        double monto = scanner.nextDouble();
+        double descuento;
+        
+        if (monto >= 200) {
+            descuento = monto * 0.15;
+        } else if (monto >= 100) {
+            descuento = monto * 0.10;
+        } else {
+            descuento = monto * 0.05;
+        }
+        
+        double total_a_pagar = monto - descuento;
+        System.out.printf("Monto a pagar después del descuento: $%.2f%n", total_a_pagar);
+        }
+    }
+}
