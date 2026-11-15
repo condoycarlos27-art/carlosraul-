@@ -1,0 +1,11 @@
+tarifa_base = 2.00
+km = float(input("Kilometros recorridos: "))
+es_noche = input("¿Es de noche?(S/N):")
+
+total = tarifa_base + ( km * 1.50)
+
+if km > 10: 
+    total*= 1.20
+if es_noche.lower() == "s"
+     total*= 1.30
+print( f"TOTAL A PAGAR: ${total:.2f}")
