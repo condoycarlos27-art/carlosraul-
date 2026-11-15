@@ -1,0 +1,14 @@
+# Programa para detectar números de Armstrong (suma de cubos de dígitos)
+numero = int(input("Ingrese un número: "))
+original = numero
+suma_cubos = 0
+
+while numero > 0:
+    digito = numero % 10
+    suma_cubos = suma_cubos + digito ** 3
+    numero = numero // 10
+
+if suma_cubos == original:
+    print("Es número de Armstrong")
+else:
+    print("NO es número de Armstrong")
