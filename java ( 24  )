@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+class AnualidadMensual {
+    public static void main(String[] args) {
+        double D, i, total_depositado, VF;
+        int n;
+        try (Scanner entrada = new Scanner(System.in)) {
+
+            System.out.print("Ingrese depósito mensual: ");
+            D = entrada.nextDouble();
+
+            System.out.print("Ingrese tasa mensual en decimal: ");
+            i = entrada.nextDouble();
+
+            System.out.print("Ingrese cantidad de meses: ");
+            n = entrada.nextInt();
+
+            total_depositado = D * n;
+            VF = D * ((Math.pow(1 + i, n) - 1) / i);
+
+            System.out.println("Total depositado: " + total_depositado);
+            System.out.println("Valor futuro de la anualidad: " + VF);
+        }
+    }
+}
