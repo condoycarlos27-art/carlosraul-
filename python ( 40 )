@@ -1,0 +1,14 @@
+# Programa para clasificar categoría de estudiante
+promedio = float(input("Ingrese promedio del estudiante: "))
+asistencia_porcentaje = float(input("Ingrese porcentaje de asistencia: "))
+
+if promedio >= 9 and asistencia_porcentaje >= 90:
+    categoria = "Excelente"
+elif promedio >= 7 and asistencia_porcentaje >= 80:
+    categoria = "Bueno"
+elif promedio >= 6 and asistencia_porcentaje >= 70:
+    categoria = "Regular"
+else:
+    categoria = "Deficiente"
+
+print("Categoría del estudiante:", categoria)
