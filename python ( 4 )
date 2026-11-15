@@ -1,0 +1,8 @@
+largo = float(input("Ingrese el largo del terreno (metros): "))
+ancho = float(input("Ingrese el ancho del terreno (metros): "))
+
+area = largo * ancho
+perimetro = 2 * (largo + ancho)
+
+print(f"Área del terreno: {area:.2f} m²")
+print(f"Perímetro del terreno: {perimetro:.2f} m")
