@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class TransporteLoja {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+        System.out.println("===== MEDIO DE TRANSPORTE (5 km por Loja) =====");
+        System.out.println("1 = Bus urbano");
+        System.out.println("2 = Taxi");
+        System.out.println("3 = Bicicleta");
+        System.out.println("4 = Caminar");
+        System.out.print("Seleccione opción: ");
+        int opcion = sc.nextInt();
+
+        switch(opcion){
+            case 1 -> System.out.println("Tiempo estimado: 20 min → Medio económico, tiene paradas frecuentes");
+            case 2 -> System.out.println("Tiempo estimado: 10 min → Más rápido, costo más alto");
+            case 3 -> System.out.println("Tiempo estimado: 18 min → Económico y saludable");
+            case 4 -> System.out.println("Tiempo estimado: 45 min → Sin costo, más lento");
+            default -> System.out.println("Opción de transporte inválida");
+        }
+        }
+    }
+}
