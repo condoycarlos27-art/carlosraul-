@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class ConvTemperatura {
+    public static void main(String[] args) {
+        double gc, gf, gk;
+        try (Scanner entrada = new Scanner(System.in)) {
+            System.out.print("Ingrese temperatura en grados centígrados: ");
+            gc = entrada.nextDouble();
+
+            if (gc > 0) {
+                gf = (9.0 / 5.0) * gc + 32;
+                gk = gc + 273.15;
+                System.out.println("Temperatura en Fahrenheit: " + gf);
+                System.out.println("Temperatura en Kelvin: " + gk);
+            } else {
+                System.out.println("La temperatura no es positiva, no se hace la conversión");
+            }
+        }
+    }
+}
