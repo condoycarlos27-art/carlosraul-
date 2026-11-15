@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class DescuentoLibreriaEjercicio1 {
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("¿Es estudiante UTPL? (S/N): ");
+            String esEstudiante = sc.next().toUpperCase();
+            System.out.print("Ingrese monto de compra: $");
+            double monto = sc.nextDouble();
+            int descuento;
+
+            if (esEstudiante.equals("S")) {
+                descuento = 20;
+                if (monto > 30) descuento +=5;
+            } else {
+                descuento =10;
+                if (monto >50) descuento +=10;
+            }
+            double totalPagar = monto - (monto * descuento /100);
+            System.out.println("Descuento aplicado: "+descuento+"%");
+            System.out.printf("Monto a pagar: $%.2f%n", totalPagar);
+        }
+    }
+}
