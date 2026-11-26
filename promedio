@@ -1,0 +1,12 @@
+INICIO
+    Definir promedio Como Real
+    
+    Escribir "Ingrese el promedio final del estudiante (0 a 10):"
+    Leer promedio
+    
+    Si promedio >= 7 Entonces
+        Escribir "APRUEBA"
+    SiNo
+        Escribir "NO APRUEBA"
+    Fin Si
+FIN
